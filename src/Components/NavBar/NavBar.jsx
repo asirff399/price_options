@@ -13,15 +13,17 @@ const NavBar = () => {
         { id: 5, path: "/dashboard", name: "Dashboard" }
     ];
     return (
-        <nav className="md:flex lg:flex gap-3 ">
-            <div className="text-3xl md:hidden lg:hidden" onClick={()=>setOpen(!open)}>
+        <nav className="w-full h-[70px]">
+            <div className="text-3xl md:hidden lg:hidden p-5" onClick={()=>setOpen(!open)}>
                 {
                     open === true ? <HiOutlineMenuAlt1 /> : <FaRegWindowClose />
                 }
             </div>
-            {
-                routes.map(route => <Link key={route.id} route={route}></Link>)
-            }
+            <ul className={`${open ? 'start-6':'-start-60'} absolute duration-1000 md:relative lg:relative bg-slate-800 md:w-full lg:w-full md:h-full lf:w-full md:flex lg:flex justify-center items-center gap-4 p-2 rounded-lg`}>
+                {
+                    routes.map(route => <Link key={route.id} route={route}></Link>)
+                }
+            </ul>
         </nav>
     );
 };
