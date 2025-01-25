@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "Basic Plan",
+      "price": 30,
+      "features": ["Gym Access", "Locker Room", "Water Supply"]
+    },
+    {
+      "id": 2,
+      "name": "Standard Plan",
+      "price": 50,
+      "features": ["Gym Access", "Personal Trainer", "Sauna", "Locker Room"]
+    },
+    {
+      "id": 3,
+      "name": "Premium Plan",
+      "price": 80,
+      "features": ["Gym Access", "Personal Trainer", "Swimming Pool", "Sauna", "Diet Consultation"]
+    },
+    {
+      "id": 4,
+      "name": "Family Plan",
+      "price": 120,
+      "features": ["Gym Access", "Family Locker Room", "Group Classes", "Kids Area"]
+    },
+    {
+      "id": 5,
+      "name": "Elite Plan",
+      "price": 150,
+      "features": ["Gym Access", "VIP Lounge", "Personal Trainer", "Sauna", "Swimming Pool", "Diet Consultation", "Massage Therapy"]
+    },
+    {
+      "id": 6,
+      "name": "Student Plan",
+      "price": 25,
+      "features": ["Gym Access", "Locker Room", "Discounted Classes"]
+    },
+    {
+      "id": 7,
+      "name": "Couples Plan",
+      "price": 90,
+      "features": ["Gym Access", "Couples Training", "Sauna", "Diet Consultation"]
+    },
+    {
+      "id": 8,
+      "name": "Weekend Warrior",
+      "price": 40,
+      "features": ["Gym Access", "Weekend Classes", "Swimming Pool"]
+    },
+    {
+      "id": 9,
+      "name": "Senior Plan",
+      "price": 35,
+      "features": ["Gym Access", "Wellness Programs", "Physiotherapy", "Diet Consultation"]
+    },
+    {
+      "id": 10,
+      "name": "Corporate Plan",
+      "price": 200,
+      "features": ["Gym Access", "Team Sessions", "VIP Lounge", "Personal Trainer", "Diet Consultation"]
+    }
+  ]
+  
