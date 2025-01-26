@@ -9,7 +9,6 @@ function App() {
      {/* <DaisyNav></DaisyNav> */}
      <NavBar></NavBar>
      <Priceoptions></Priceoptions>
-     <h1>Hellow loosers !!</h1>
     </>
   );
 }

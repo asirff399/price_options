@@ -16,10 +16,10 @@ const NavBar = () => {
         <nav className="w-full h-[70px]">
             <div className="text-3xl md:hidden lg:hidden p-5" onClick={()=>setOpen(!open)}>
                 {
-                    open === true ? <HiOutlineMenuAlt1 /> : <FaRegWindowClose />
+                    open === true ?  <FaRegWindowClose /> : <HiOutlineMenuAlt1 />
                 }
             </div>
-            <ul className={`${open ? 'start-6':'-start-60'} absolute duration-1000 md:relative lg:relative bg-slate-800 md:w-full lg:w-full md:h-full lf:w-full md:flex lg:flex justify-center items-center gap-4 p-2 rounded-lg`}>
+            <ul className={`${open ? 'start-6':'-start-60'} md:start-0 lg:start-0 absolute duration-1000 md:relative lg:relative bg-slate-800 md:w-full lg:w-full md:h-full lf:w-full md:flex lg:flex justify-center items-center gap-4 p-2 rounded-lg`}>
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
                 }
