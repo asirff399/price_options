@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { BarChart, Bar, XAxis, YAxis, Tooltip} from 'recharts';
+import { InfinitySpin } from "react-loader-spinner";
 
 const Phones = () => {
     const [phones,setPhones] = useState([])
+    const [loader,setLoader] = useState(true)
     useEffect(()=>{
         // fetch("https://openapi.programming-hero.com/api/phones?search=iphone")
         // .then(res=>res.json())
@@ -19,9 +21,13 @@ const Phones = () => {
                 return obj
             })
             setPhones(fakePhoneData)
+            setLoader(false)
         })
         
     },[])
+
+    
+
     return (
         <div>
             <h1 className="text-2xl">Phones: {phones.length}</h1>
@@ -31,6 +37,13 @@ const Phones = () => {
                 <YAxis dataKey="price"></YAxis>
                 <Tooltip></Tooltip>
             </BarChart>
+
+            {loader && <InfinitySpin
+            visible={true}
+            width="200"
+            color="#4fa94d"
+            ariaLabel="infinity-spin-loading"
+            />}
         </div>
     );
 };
